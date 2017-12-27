@@ -1,0 +1,6 @@
+framework module Pods_Sounds_of_Nature {
+  umbrella header "Pods-Sounds of Nature-umbrella.h"
+
+  export *
+  module * { export * }
+}

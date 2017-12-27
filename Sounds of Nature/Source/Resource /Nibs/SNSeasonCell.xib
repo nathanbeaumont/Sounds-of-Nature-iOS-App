@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UITableViewCell"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SNSeasonCell" rowHeight="120" id="cWN-Ng-HJd" customClass="SNSeasonCell">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cWN-Ng-HJd" id="SnB-LD-szz">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fall_cell_image" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-C1-SnZ">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="119.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="213" id="1sl-dF-mGh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnB-h2-4KJ">
+                        <rect key="frame" x="221" y="11" width="128" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ji-83-sRV" userLabel="Description">
+                        <rect key="frame" x="221" y="40" width="128" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ji-83-sRV" firstAttribute="top" secondItem="hnB-h2-4KJ" secondAttribute="bottom" constant="8" id="0Eg-HD-KQ3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hnB-h2-4KJ" secondAttribute="trailing" id="AZR-nf-del"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="5ji-83-sRV" secondAttribute="trailing" id="G3c-Zs-xzF"/>
+                    <constraint firstItem="hnB-h2-4KJ" firstAttribute="top" secondItem="SnB-LD-szz" secondAttribute="topMargin" id="UhT-P1-KHf"/>
+                    <constraint firstItem="c6m-C1-SnZ" firstAttribute="leading" secondItem="SnB-LD-szz" secondAttribute="leading" id="WBG-6e-m9p"/>
+                    <constraint firstItem="5ji-83-sRV" firstAttribute="leading" secondItem="c6m-C1-SnZ" secondAttribute="trailing" constant="8" id="YXF-mg-Nrl"/>
+                    <constraint firstAttribute="bottom" secondItem="c6m-C1-SnZ" secondAttribute="bottom" id="jfi-9p-Ngt"/>
+                    <constraint firstItem="hnB-h2-4KJ" firstAttribute="leading" secondItem="c6m-C1-SnZ" secondAttribute="trailing" constant="8" id="tB2-VA-kZt"/>
+                    <constraint firstItem="c6m-C1-SnZ" firstAttribute="top" secondItem="SnB-LD-szz" secondAttribute="top" id="uWf-mo-9gg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="seasonDescriptionLabel" destination="5ji-83-sRV" id="ggO-9d-96n"/>
+                <outlet property="seasonImageView" destination="c6m-C1-SnZ" id="7hC-rh-yRO"/>
+                <outlet property="seasonTitleLabel" destination="hnB-h2-4KJ" id="4FN-g4-6co"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="67"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fall_cell_image" width="106" height="60"/>
+    </resources>
+</document>
