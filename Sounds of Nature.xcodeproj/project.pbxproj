@@ -8,29 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		75C154E95FCE2CB9988583EF /* Pods_Sounds_of_Nature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC603C3B15C20C62FD44168 /* Pods_Sounds_of_Nature.framework */; };
+		C021DAFB1FF947BC00F79193 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C021DAFA1FF947BC00F79193 /* Date.swift */; };
 		C02F8EBF1FF34A6A007D6140 /* SNAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F8EBE1FF34A6A007D6140 /* SNAppDelegate.swift */; };
 		C02F8EC61FF34A6A007D6140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02F8EC51FF34A6A007D6140 /* Assets.xcassets */; };
-		C02F8EC91FF34A6A007D6140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02F8EC71FF34A6A007D6140 /* LaunchScreen.storyboard */; };
 		C02F8ED51FF34CE7007D6140 /* SNHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F8ED41FF34CE7007D6140 /* SNHomeTableViewController.swift */; };
 		C02F8ED71FF34CF1007D6140 /* SNSeasonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02F8ED61FF34CF1007D6140 /* SNSeasonCell.swift */; };
 		C02F8EDB1FF34D75007D6140 /* SNHomeTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02F8ED91FF34D75007D6140 /* SNHomeTableViewController.xib */; };
 		C02F8EDE1FF35927007D6140 /* SNSeasonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C02F8EDD1FF35927007D6140 /* SNSeasonCell.xib */; };
 		C02F8EE01FF35B9A007D6140 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C02F8EDF1FF35B9A007D6140 /* Localizable.strings */; };
+		C08D0F391FF80D9000FC0949 /* SNSplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08D0F381FF80D9000FC0949 /* SNSplashScreenViewController.swift */; };
+		C08D0F3B1FF80F2000FC0949 /* SNSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */; };
+		C08D0F3D1FF8107A00FC0949 /* SNLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */; };
+		C08D0F3F1FF8252100FC0949 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D0F3E1FF8252100FC0949 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1AC603C3B15C20C62FD44168 /* Pods_Sounds_of_Nature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sounds_of_Nature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6C7845EF1B47B4D92025E5 /* Pods-Sounds of Nature.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds of Nature.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds of Nature/Pods-Sounds of Nature.debug.xcconfig"; sourceTree = "<group>"; };
+		C021DAFA1FF947BC00F79193 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		C02F8EBB1FF34A6A007D6140 /* Sounds of Nature.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sounds of Nature.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C02F8EBE1FF34A6A007D6140 /* SNAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAppDelegate.swift; sourceTree = "<group>"; };
 		C02F8EC51FF34A6A007D6140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C02F8EC81FF34A6A007D6140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C02F8ECA1FF34A6A007D6140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C02F8ED41FF34CE7007D6140 /* SNHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNHomeTableViewController.swift; sourceTree = "<group>"; };
 		C02F8ED61FF34CF1007D6140 /* SNSeasonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SNSeasonCell.swift; sourceTree = "<group>"; };
 		C02F8ED91FF34D75007D6140 /* SNHomeTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SNHomeTableViewController.xib; sourceTree = "<group>"; };
 		C02F8EDD1FF35927007D6140 /* SNSeasonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSeasonCell.xib; sourceTree = "<group>"; };
 		C02F8EDF1FF35B9A007D6140 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C08D0F381FF80D9000FC0949 /* SNSplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSplashScreenViewController.swift; sourceTree = "<group>"; };
+		C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSplashScreenViewController.xib; sourceTree = "<group>"; };
+		C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SNLaunchScreen.storyboard; sourceTree = "<group>"; };
+		C08D0F3E1FF8252100FC0949 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		E83766422590AD0C8357FF9E /* Pods-Sounds of Nature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds of Nature.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds of Nature/Pods-Sounds of Nature.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08D0F3F1FF8252100FC0949 /* QuartzCore.framework in Frameworks */,
 				75C154E95FCE2CB9988583EF /* Pods_Sounds_of_Nature.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,9 +67,18 @@
 		7BB57BC0DCFBDD39E34F9253 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C08D0F3E1FF8252100FC0949 /* QuartzCore.framework */,
 				1AC603C3B15C20C62FD44168 /* Pods_Sounds_of_Nature.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C021DAF91FF947AB00F79193 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C021DAFA1FF947BC00F79193 /* Date.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C02F8EB21FF34A6A007D6140 = {
@@ -87,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				C02F8ED01FF34C54007D6140 /* Source */,
-				C02F8EBE1FF34A6A007D6140 /* SNAppDelegate.swift */,
-				C02F8ECA1FF34A6A007D6140 /* Info.plist */,
+				C02F8ED31FF34CA3007D6140 /* Resource  */,
 			);
 			path = "Sounds of Nature";
 			sourceTree = "<group>";
@@ -96,9 +113,10 @@
 		C02F8ED01FF34C54007D6140 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				C02F8EBE1FF34A6A007D6140 /* SNAppDelegate.swift */,
 				C02F8ED21FF34C9C007D6140 /* Cells */,
 				C02F8ED11FF34C66007D6140 /* Controllers */,
-				C02F8ED31FF34CA3007D6140 /* Resource  */,
+				C021DAF91FF947AB00F79193 /* Extensions */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -106,6 +124,7 @@
 		C02F8ED11FF34C66007D6140 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C08D0F381FF80D9000FC0949 /* SNSplashScreenViewController.swift */,
 				C02F8ED41FF34CE7007D6140 /* SNHomeTableViewController.swift */,
 			);
 			path = Controllers;
@@ -122,10 +141,10 @@
 		C02F8ED31FF34CA3007D6140 /* Resource  */ = {
 			isa = PBXGroup;
 			children = (
+				C02F8EC51FF34A6A007D6140 /* Assets.xcassets */,
+				C02F8ECA1FF34A6A007D6140 /* Info.plist */,
 				C02F8EDF1FF35B9A007D6140 /* Localizable.strings */,
 				C02F8ED81FF34D68007D6140 /* Nibs */,
-				C02F8EC71FF34A6A007D6140 /* LaunchScreen.storyboard */,
-				C02F8EC51FF34A6A007D6140 /* Assets.xcassets */,
 			);
 			path = "Resource ";
 			sourceTree = "<group>";
@@ -134,7 +153,9 @@
 			isa = PBXGroup;
 			children = (
 				C02F8ED91FF34D75007D6140 /* SNHomeTableViewController.xib */,
+				C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */,
 				C02F8EDD1FF35927007D6140 /* SNSeasonCell.xib */,
+				C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -202,8 +223,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02F8EE01FF35B9A007D6140 /* Localizable.strings in Resources */,
-				C02F8EC91FF34A6A007D6140 /* LaunchScreen.storyboard in Resources */,
+				C08D0F3B1FF80F2000FC0949 /* SNSplashScreenViewController.xib in Resources */,
 				C02F8EC61FF34A6A007D6140 /* Assets.xcassets in Resources */,
+				C08D0F3D1FF8107A00FC0949 /* SNLaunchScreen.storyboard in Resources */,
 				C02F8EDB1FF34D75007D6140 /* SNHomeTableViewController.xib in Resources */,
 				C02F8EDE1FF35927007D6140 /* SNSeasonCell.xib in Resources */,
 			);
@@ -268,23 +290,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02F8EBF1FF34A6A007D6140 /* SNAppDelegate.swift in Sources */,
+				C021DAFB1FF947BC00F79193 /* Date.swift in Sources */,
 				C02F8ED51FF34CE7007D6140 /* SNHomeTableViewController.swift in Sources */,
 				C02F8ED71FF34CF1007D6140 /* SNSeasonCell.swift in Sources */,
+				C08D0F391FF80D9000FC0949 /* SNSplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		C02F8EC71FF34A6A007D6140 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C02F8EC81FF34A6A007D6140 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C02F8ECB1FF34A6A007D6140 /* Debug */ = {
@@ -400,7 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sounds of Nature/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sounds of Nature/Resource /Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NathanBeaumont.Sounds-of-Nature";
@@ -416,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Sounds of Nature/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sounds of Nature/Resource /Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.NathanBeaumont.Sounds-of-Nature";

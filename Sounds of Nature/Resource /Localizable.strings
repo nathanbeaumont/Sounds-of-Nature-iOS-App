@@ -1,4 +1,4 @@
-
+/* Cell Season Descriptions */
 "fall_cell_title" = "Fall";
 "fall_cell_description" = "Listen to crisp autumn leaves brush against the wind";
 "spring_cell_title" = "Spring";
@@ -8,5 +8,5 @@
 "winter_cell_title" = "Winter";
 "winter_cell_description" = "Relax to the sounds and seens of chilly snowy winds";
 
-"test" = "test";
-
+/* Splash Screen */
+"splash_title" = "Sounds\nof\nNature";

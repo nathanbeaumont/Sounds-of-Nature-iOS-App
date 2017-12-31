@@ -19,6 +19,7 @@ class SNHomeTableViewController: UIViewController {
 
     self.tableView.dataSource = self
     self.tableView.delegate = self
+    self.tableView.tableFooterView = UIView()
   }
 }
 
