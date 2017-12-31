@@ -15,7 +15,7 @@ class SNSplashScreenViewController: UIViewController {
   @IBOutlet weak var titleLabel: UILabel!
   
   let animationDelay = 1.0
-  let animationDuration = 2.0
+  let animationDuration = 2.5
   
   override var prefersStatusBarHidden: Bool {
     return true
@@ -27,7 +27,7 @@ class SNSplashScreenViewController: UIViewController {
     super.viewDidLoad()
     
     splashImageView.image = imageToPresent()
-    splashImageView.contentMode = .scaleAspectFill
+    splashImageView.contentMode = .scaleToFill
     titleLabel.layer.opacity = 0.0
     titleLabel.text = NSLocalizedString("splash_title", comment: "")
   }
@@ -40,16 +40,17 @@ class SNSplashScreenViewController: UIViewController {
   // MARK: Private Methods
   
   @objc private func presentHomeViewController() {
-    self.navigationController?.present(SNHomeTableViewController(), animated: true, completion: nil)
+    self.navigationController?.pushViewController(SNHomeTableViewController(), animated: true)
   }
   
   @objc private func showTitleLabelWithAnimation() {
+    self.titleLabel.layer.opacity = 1.0
+    
     let animation = CABasicAnimation(keyPath: "opacity")
     animation.fromValue = 0.0
     animation.toValue = 1.0
     animation.duration = animationDuration
     self.titleLabel.layer.add(animation, forKey: "opacity")
-    self.titleLabel.layer.opacity = 1.0
   }
   
   func currentTimeOfDay() -> TimeOfDay {
@@ -84,5 +85,4 @@ class SNSplashScreenViewController: UIViewController {
       return #imageLiteral(resourceName: "night-splash")
     }
   }
-  
 }

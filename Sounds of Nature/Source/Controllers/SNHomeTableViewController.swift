@@ -44,6 +44,13 @@ extension SNHomeTableViewController: UITableViewDataSource {
 
 extension SNHomeTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+      return 120
     }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    let cell = tableView.cellForRow(at: indexPath) as? SNSeasonCell
+    let videoTableViewController = SNVideoTableViewController(WithSeason: cell?.season ?? .spring)
+    
+    self.navigationController?.pushViewController(videoTableViewController, animated: true)
+  }
 }
