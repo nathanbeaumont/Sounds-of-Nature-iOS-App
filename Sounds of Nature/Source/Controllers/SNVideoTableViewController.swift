@@ -1,8 +1,12 @@
 import UIKit
+import youtube_ios_player_helper
 
 class SNVideoTableViewController: UIViewController {
 
-  let season: SeasonIndex
+    @IBOutlet weak var tableView: UITableView!
+    
+    let season: SeasonIndex
+  let dataSourece: SNYoutubeDataSource
   
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
@@ -12,6 +16,7 @@ class SNVideoTableViewController: UIViewController {
   
   init(WithSeason season: SeasonIndex) {
     self.season = season
+    self.dataSourece = SNYoutubeDataSource(WithSeason: self.season)
     
     super.init(nibName: nil, bundle: nil)
   }
@@ -43,5 +48,29 @@ class SNVideoTableViewController: UIViewController {
     UINavigationBar.appearance().tintColor = UIColor.sn_greenBarTintColor()
     self.navigationController?.navigationBar.barTintColor = UIColor.sn_greenBarTintColor()
     self.navigationController?.navigationBar.tintColor = UIColor.white
+    
+    let nib = UINib(nibName: SNVideoCell.description(), bundle: .main)
+    self.tableView.register(nib, forCellReuseIdentifier: SNVideoCell.description())
+    self.tableView.dataSource = self
+    self.tableView.delegate = self
+  }
+}
+
+extension SNVideoTableViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return dataSourece.videoIds.count
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell: SNVideoCell! = tableView.dequeueReusableCell(withIdentifier: SNVideoCell.description()) as? SNVideoCell
+    cell?.configureWithVideoId(id: dataSourece.videoIds[indexPath.row])
+    
+    return cell
+  }
+}
+
+extension SNVideoTableViewController: UITableViewDelegate {
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 100.0
   }
 }

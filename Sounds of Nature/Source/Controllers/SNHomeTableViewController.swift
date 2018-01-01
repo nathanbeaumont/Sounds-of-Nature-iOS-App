@@ -31,11 +31,7 @@ extension SNHomeTableViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let identifier = SNSeasonCell.description()
-    var cell: SNSeasonCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? SNSeasonCell
-
-    if cell == nil {
-      cell = SNSeasonCell(style: .default, reuseIdentifier: SNSeasonCell.description())
-    }
+    let cell: SNSeasonCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? SNSeasonCell
     cell?.configureForIndex(index: indexPath.row)
     
     return cell

@@ -19,6 +19,10 @@ extension UIColor {
     return UIColor(displayP3Red: redScale, green: greenScale, blue: blueScalle, alpha: alpha)
   }
   
+  class func sn_darkGrayLoadingCell() -> UIColor {
+    return UIColor.colorWithRed(94, green: 94, blue: 94, alpha: 0.80)
+  }
+  
   class func sn_greenColor() -> UIColor {
     return UIColor.colorWithRed(58, green: 108, blue: 34)
   }

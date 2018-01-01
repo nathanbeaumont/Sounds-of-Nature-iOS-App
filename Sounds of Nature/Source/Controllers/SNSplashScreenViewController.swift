@@ -27,7 +27,7 @@ class SNSplashScreenViewController: UIViewController {
     super.viewDidLoad()
     
     splashImageView.image = imageToPresent()
-    splashImageView.contentMode = .scaleToFill
+    splashImageView.contentMode = .scaleAspectFill
     titleLabel.layer.opacity = 0.0
     titleLabel.text = NSLocalizedString("splash_title", comment: "")
   }

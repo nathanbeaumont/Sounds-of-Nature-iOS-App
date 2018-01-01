@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "23029BFB94E87810E07F533422AFBF99"
-               BuildableName = "Pods_Sounds_of_Nature.framework"
-               BlueprintName = "Pods-Sounds of Nature"
+               BlueprintIdentifier = "214B551CAB407F072041277770A3596A"
+               BuildableName = "youtube_ios_player_helper.framework"
+               BlueprintName = "youtube-ios-player-helper"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,9 +47,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "23029BFB94E87810E07F533422AFBF99"
-            BuildableName = "Pods_Sounds_of_Nature.framework"
-            BlueprintName = "Pods-Sounds of Nature"
+            BlueprintIdentifier = "214B551CAB407F072041277770A3596A"
+            BuildableName = "youtube_ios_player_helper.framework"
+            BlueprintName = "youtube-ios-player-helper"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
