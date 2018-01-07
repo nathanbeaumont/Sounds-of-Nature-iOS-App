@@ -1,7 +1,7 @@
 import Foundation
 
 struct SNYoutubeDataSource {
-  private let fallVideoIds: [String] = ["nn3wvAN15Ys", "IadsLclBOS8", "w7B1b6YEqY",
+  private let fallVideoIds: [String] = ["nn3wvAN15Ys", "IadsLclBOS8", "w0szAwgybZs",
                                         "6uhRxK_EOm4", "bZIjuGlIA2U"]
   private let springVideoIds: [String] = ["R3AKlscrjmQ", "L6JG_L-PWMA", "1t7g690boao",
                                           "6TwkVs6nhoY", "H1iboKia3AQ", "NK2_bcQcoD4",

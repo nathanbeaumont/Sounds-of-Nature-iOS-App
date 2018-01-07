@@ -64,6 +64,7 @@ extension SNVideoTableViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell: SNVideoCell! = tableView.dequeueReusableCell(withIdentifier: SNVideoCell.description()) as? SNVideoCell
     cell?.configureWithVideoId(id: dataSourece.videoIds[indexPath.row])
+    cell?.tableView = tableView
     
     return cell
   }
