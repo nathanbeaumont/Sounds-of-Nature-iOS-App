@@ -28,6 +28,10 @@
 		C08D0F3B1FF80F2000FC0949 /* SNSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */; };
 		C08D0F3D1FF8107A00FC0949 /* SNLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */; };
 		C08D0F3F1FF8252100FC0949 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08D0F3E1FF8252100FC0949 /* QuartzCore.framework */; };
+		C0D9229E2001318D00B3A6A9 /* SNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9229D2001318D00B3A6A9 /* SNView.swift */; };
+		C0D922A02001377000B3A6A9 /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D9229F2001377000B3A6A9 /* NSObject.swift */; };
+		C0FA5D861FFC7E0A006C0257 /* SNAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FA5D851FFC7E0A006C0257 /* SNAppInfoView.swift */; };
+		C0FA5D881FFC7E22006C0257 /* SNAppInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FA5D871FFC7E22006C0257 /* SNAppInfoView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +59,10 @@
 		C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNSplashScreenViewController.xib; sourceTree = "<group>"; };
 		C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SNLaunchScreen.storyboard; sourceTree = "<group>"; };
 		C08D0F3E1FF8252100FC0949 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C0D9229D2001318D00B3A6A9 /* SNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNView.swift; sourceTree = "<group>"; };
+		C0D9229F2001377000B3A6A9 /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		C0FA5D851FFC7E0A006C0257 /* SNAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNAppInfoView.swift; sourceTree = "<group>"; };
+		C0FA5D871FFC7E22006C0257 /* SNAppInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SNAppInfoView.xib; sourceTree = "<group>"; };
 		E83766422590AD0C8357FF9E /* Pods-Sounds of Nature.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sounds of Nature.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sounds of Nature/Pods-Sounds of Nature.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +103,7 @@
 				C021DAFA1FF947BC00F79193 /* Date.swift */,
 				C05E4BCC1FFAB6CA00AC5AC6 /* UIColor.swift */,
 				C03C85341FFABE1E002CE0F5 /* UIFont.swift */,
+				C0D9229F2001377000B3A6A9 /* NSObject.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,10 +141,12 @@
 			isa = PBXGroup;
 			children = (
 				C02F8EBE1FF34A6A007D6140 /* SNAppDelegate.swift */,
+				C0D9229C2001313F00B3A6A9 /* Base */,
 				C02F8ED21FF34C9C007D6140 /* Cells */,
 				C02F8ED11FF34C66007D6140 /* Controllers */,
 				C021DAF91FF947AB00F79193 /* Extensions */,
 				C05E4BC91FF989D200AC5AC6 /* Models */,
+				C0FA5D841FFC7D55006C0257 /* Views */,
 				C056DFB31FFAD32600B8F13B /* Youtube Data */,
 			);
 			path = Source;
@@ -179,6 +190,7 @@
 				C08D0F3C1FF8107A00FC0949 /* SNLaunchScreen.storyboard */,
 				C08D0F3A1FF80F2000FC0949 /* SNSplashScreenViewController.xib */,
 				C05E4BC61FF987CB00AC5AC6 /* SNVideoTableViewController.xib */,
+				C0FA5D871FFC7E22006C0257 /* SNAppInfoView.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -206,6 +218,22 @@
 				C05E4BCA1FF989DC00AC5AC6 /* Season.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C0D9229C2001313F00B3A6A9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C0D9229D2001318D00B3A6A9 /* SNView.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C0FA5D841FFC7D55006C0257 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C0FA5D851FFC7E0A006C0257 /* SNAppInfoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +302,7 @@
 				C02F8EE01FF35B9A007D6140 /* Localizable.strings in Resources */,
 				C05E4BC81FF987CB00AC5AC6 /* SNVideoTableViewController.xib in Resources */,
 				C08D0F3B1FF80F2000FC0949 /* SNSplashScreenViewController.xib in Resources */,
+				C0FA5D881FFC7E22006C0257 /* SNAppInfoView.xib in Resources */,
 				C02F8EC61FF34A6A007D6140 /* Assets.xcassets in Resources */,
 				C08D0F3D1FF8107A00FC0949 /* SNLaunchScreen.storyboard in Resources */,
 				C02F8EDB1FF34D75007D6140 /* SNHomeTableViewController.xib in Resources */,
@@ -343,12 +372,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02F8EBF1FF34A6A007D6140 /* SNAppDelegate.swift in Sources */,
+				C0D9229E2001318D00B3A6A9 /* SNView.swift in Sources */,
 				C021DAFB1FF947BC00F79193 /* Date.swift in Sources */,
 				C05E4BCB1FF989DC00AC5AC6 /* Season.swift in Sources */,
 				C056DFB51FFAD37000B8F13B /* SNYoutubeDataSource.swift in Sources */,
 				C02F8ED51FF34CE7007D6140 /* SNHomeTableViewController.swift in Sources */,
+				C0D922A02001377000B3A6A9 /* NSObject.swift in Sources */,
 				C02F8ED71FF34CF1007D6140 /* SNSeasonCell.swift in Sources */,
 				C05E4BCD1FFAB6CA00AC5AC6 /* UIColor.swift in Sources */,
+				C0FA5D861FFC7E0A006C0257 /* SNAppInfoView.swift in Sources */,
 				C05E4BC71FF987CB00AC5AC6 /* SNVideoTableViewController.swift in Sources */,
 				C04B0EF11FFB360000308E81 /* SNVideoCell.swift in Sources */,
 				C08D0F391FF80D9000FC0949 /* SNSplashScreenViewController.swift in Sources */,

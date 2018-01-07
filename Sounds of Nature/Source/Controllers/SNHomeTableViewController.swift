@@ -19,7 +19,14 @@ class SNHomeTableViewController: UIViewController {
 
     self.tableView.dataSource = self
     self.tableView.delegate = self
-    self.tableView.tableFooterView = UIView()
+  }
+  
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    
+    let tableFooterFrame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: 150)
+    let view = SNAppInfoView(frame: tableFooterFrame)
+    self.tableView.tableFooterView = view
   }
 }
 

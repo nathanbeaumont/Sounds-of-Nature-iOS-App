@@ -8,5 +8,10 @@
 "winter_cell_title" = "Winter";
 "winter_cell_description" = "Relax to the sounds and seens of chilly snowy winds";
 
+/* Info View */
+"feedback_description" = "Suggestions and feedback,\n please send emails to\n";
+"feedback_email" = "sounds.of.nature617@gmail.com";
+"version_format" = "Version: %@";
+
 /* Splash Screen */
 "splash_title" = "Sounds\nof\nNature";
